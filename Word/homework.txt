@@ -1,0 +1,87 @@
+package vannuth_chhorn;
+
+import java.util.Scanner;
+
+public class Review {
+
+	public static void main(String[] args) {
+		int n = 5;
+		int result = 1;
+		for(int i = 1; i <= n; i++) {
+			result = result * i;
+	}
+		System.out.println("Factorial number of 5 is " + result);
+		
+		int n = 1;
+		int sum = 0;
+		while(n <= 50) {
+			if(n % 2 == 0) {
+				sum = sum + n;
+			}
+			n ++;
+		}
+		System.out.println("Sum of even number " + sum);
+		
+		
+		int i = 1;
+		int avarage = 0;
+		int count = 0;
+		do {
+			if(i % 2 == 1) {
+				avarage =avarage +i;
+				count++;
+			}
+			i++;
+		}while(i <= 50);
+		System.out.println("The count number is " + count);
+		
+	
+		System.out.println("A or a: entities per page is 10");
+		System.out.println("B or b : entities per page is 20");
+		System.out.println("C or c: entities per page is 50");
+		System.out.println("D or d: entities per page is 100");	
+		System.out.println("E or e: entities per page is 200");
+		System.out.println("---------------------------");
+		
+		int totalRecords = 150;
+		int recordPerPage = 5;
+		Scanner word = new Scanner(System.in);
+		String text = word.nextLine();
+		switch (text) {
+		case "a":
+		case "A":
+			recordPerPage = 10;
+			break;
+		case "b":
+		case "B":
+			recordPerPage = 20;
+			break;
+		case "c":
+		case "C":
+			recordPerPage = 50;
+			break;
+		case "d":
+		case "D":
+			recordPerPage = 100;
+				
+			break;
+		case "e":
+		case "E":
+			recordPerPage =200;				
+			break;		
+		}
+		
+		if(totalRecords%recordPerPage==0) {
+			for(int i=1;i<=totalRecords/recordPerPage;i++) {
+				System.out.print("|Page"+i+":"+recordPerPage);
+			}
+			System.out.print("|");
+		}else {
+			int page = totalRecords/recordPerPage;
+			for(int i=1;i<=totalRecords/recordPerPage;i++) {
+				System.out.print("|Page"+i+":"+recordPerPage);
+			}
+			System.out.print("|Page"+(page+1)+":"+totalRecords%recordPerPage+"|");
+		}
+		
+	}

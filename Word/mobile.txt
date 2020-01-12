@@ -1,0 +1,11 @@
+void main() => runApp(
+	MaterielApp(
+		debugeShowCheckedModeBanner:false,
+		home:Scaffold(
+			appBar:appBar(
+				backgroundColor:Colors.teal[800],
+				title:Text("APP Learning");
+			),
+		),
+	),
+)

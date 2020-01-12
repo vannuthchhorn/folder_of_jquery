@@ -1,0 +1,6 @@
+1. Need id then passed it to edit page.
+2. Edit page Get id by $_POST
+3. Select data where id
+4. List data into edit form need id also 
+5. Get value from form 
+6. Use query UPDATE  by follow where

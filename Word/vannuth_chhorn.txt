@@ -1,0 +1,50 @@
+// ----------------------------------------------------------------------------
+// HOMEWORK CHALLENGE 1
+// ----------------------------------------------------------------------------
+
+void main() {
+	printPerson("ronan", "phom penh", "french");
+	printPerson("rady", "phom penh", "cambodian");
+	printPerson("seiha", "phom penh", "cambodian");
+
+}
+
+void printPerson(String name, String address, String nationality){
+ 	print("name: " + name + "\n" + "address: " + address + "\n" + "nationality: " + nationality);
+}
+
+
+// ----------------------------------------------------------------------------
+// HOMEWORK CHALLENGE 2
+// ----------------------------------------------------------------------------
+
+void main() {
+	String result = concatenate("aaaa", "bbbb", "cccc");
+	print(result); 
+}
+
+String concatenate (String name1,String name2, String name3){
+ 	return "\" " +name1 + " " + name2 + " " + name3  + " \" ";
+}
+// ----------------------------------------------------------------------------
+// HOMEWORK CHALLENGE 3
+// ----------------------------------------------------------------------------
+void main() {
+ 	int r1 = numberOfA("ronan");
+ 	print(r1.toString());
+ 	int r2 = numberOfA("Paris is a french city");
+ 	print(r2.toString());
+}
+
+int numberOfA(String text) {
+ 	int countA = 0;
+ 	for (int i = 0; i < text.length; i++) {
+   		if (text[i] == "a" || text[i] == "A") {
+     			countA++;
+   		}
+ 	}
+ 	return countA;
+}
+
+1. Learn about how to create string and loop.
+2. Learn about sum string connect string.

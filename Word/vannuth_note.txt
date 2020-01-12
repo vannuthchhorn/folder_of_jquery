@@ -1,0 +1,62 @@
+			* Note about lesson that learn today
+
+
+	CHLENGE 1:
+
+	computeMul(int num1, int num2){
+		return num1 * num2;
+	}
+
+	void main(){
+		print(computeMul(4,3));
+	}
+k
+	*Explain: Because when we csreate function we not need to use "bool".
+
+
+	* CHALENGE 2:
+
+	computeSum(int num1, int num2) {
+   		return num1 + num2;
+	}
+	void main() {
+  		print(computeSum(2,5));
+	}
+	
+	*Explain: Because when we create function is no need the "void" and when we call it to use we don't need
+	          to use "int result" when we use it is undefind for "result".
+
+	//  CHALENGE 3
+
+	int multiply(int num1, int num2){
+		return num1 * num2;
+	}
+
+	void main() {
+
+ 	// TODO : Multiply 5 by 7 using the function add print it
+
+  		print(multiply(5,7));
+    
+  	// TODO : Multiply 3 by 6 using the function add print it 
+
+    		print(multiply(3,6));
+
+	}
+
+	*Explain: Because when we use "void" so we must to use "int".
+
+	//  CHALENGE 4
+
+	// TODO : create average a function that compute the average of 3 numbers
+	average(int num1, int num2, int num3){
+  		return (num1 + num2 + num3)/3;
+	}
+
+	void main() {
+
+  		print(average(2,5, 7));
+  		print(average(10,15, 7));
+	}
+
+	//Explain: create average a function that compute the average of 3 numbers
